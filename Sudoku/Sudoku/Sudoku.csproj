@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="GameCS.aspx.cs">
       <DependentUpon>GameCS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GameCS.aspx.designer.cs">
       <DependentUpon>GameCS.aspx</DependentUpon>

@@ -333,7 +333,9 @@
                     </td>
                 </tr>
             </table>
+
         </div>
+            <asp:Label ID="lblGameNumbers" runat="server"></asp:Label>
 
     </form>
 </body>
