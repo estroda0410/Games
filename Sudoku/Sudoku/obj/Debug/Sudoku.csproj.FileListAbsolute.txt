@@ -1,0 +1,6 @@
+C:\Users\Erin\Desktop\Git\Games\Sudoku\Sudoku\bin\Sudoku.dll.config
+C:\Users\Erin\Desktop\Git\Games\Sudoku\Sudoku\bin\Sudoku.dll
+C:\Users\Erin\Desktop\Git\Games\Sudoku\Sudoku\bin\Sudoku.pdb
+C:\Users\Erin\Desktop\Git\Games\Sudoku\Sudoku\obj\Debug\Sudoku.csprojResolveAssemblyReference.cache
+C:\Users\Erin\Desktop\Git\Games\Sudoku\Sudoku\obj\Debug\Sudoku.dll
+C:\Users\Erin\Desktop\Git\Games\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
