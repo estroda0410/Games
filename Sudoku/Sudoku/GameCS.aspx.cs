@@ -9,7 +9,7 @@ namespace Game
 {
     public partial class GameCS : System.Web.UI.Page
     {
-        private List<Label> lstLbl = new List<Label>();
+        private List<TextBox> lstTxt = new List<TextBox>();
         private List<int> gameNumbers = new List<int>();
         private Random rnd = new Random();
 
@@ -25,19 +25,19 @@ namespace Game
 
         private void GetGameBoardLabels()
         {
-            foreach (Control control in Page.Controls)
+            foreach (Control control in form1.Controls)
             {
-                foreach (Control childContrl in control.Controls)
-                {
-                    string s = childContrl.ID;
+                //foreach (Control childContrl in control.Controls)
+                //{
+                string s = control.ID;
 
-                    string x = childContrl.GetType().ToString();
-                    string id = childContrl.ID;
-                    if ((x == "System.Web.UI.WebControls.Label") && id.StartsWith("Label"))
-                    {
-                        lstLbl.Add((Label)childContrl);
-                    }
+                string x = control.GetType().ToString();
+                string id = control.ID;
+                if ((x == "System.Web.UI.WebControls.TextBox") && id.StartsWith("Text"))
+                {
+                    lstTxt.Add((TextBox)control);
                 }
+                //}
             }
         }
 
@@ -56,9 +56,9 @@ namespace Game
             //choose a random index number of gamenumbers that has not already been used
             //print the integer of the index from gamenumbers to the label
 
-            for (int i = 0; i <= lstLbl.Count - 1; i++)
+            for (int i = 0; i <= lstTxt.Count - 1; i++)
             {
-                lstLbl[i].Text = rnd.Next(1, 10).ToString();
+                lstTxt[i].Text = rnd.Next(1, 10).ToString();
             }
         }
 
