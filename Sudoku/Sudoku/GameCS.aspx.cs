@@ -52,13 +52,21 @@ namespace Game
 
         private void FillGameBoard()
         {
-            //use the index of gamenumbers
-            //choose a random index number of gamenumbers that has not already been used
-            //print the integer of the index from gamenumbers to the label
+            /*You can start with the first cell by populating it with a random number from 1 to 9, 
+             * then move to the second cell and populate it with another random number excluding 
+             * the number in the first cell etc. Basically when populating a certain cell you’ll 
+             * have to take in mind the numbers that have already been populated in the column, 
+             * row and box where the current cell is positioned.
+             * 
+             * Need a 2D array to check number validity. Fill that first, then from that fill the 
+             * boxes on the gameboard
+             * */
 
             for (int i = 0; i <= lstTxt.Count - 1; i++)
             {
-                lstTxt[i].Text = rnd.Next(1, 10).ToString();
+                int index = rnd.Next(0, gameNumbers.Count - 1);
+                lstTxt[i].Text = gameNumbers[index].ToString();
+                gameNumbers.Remove(gameNumbers[index]);
             }
         }
 
