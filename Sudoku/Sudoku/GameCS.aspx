@@ -11,6 +11,10 @@
             text-align: center;
         }
 
+        .table-center {
+            margin: auto;
+        }
+
         div.game-table {
             border: 4px solid black;
             width: 610px;
@@ -75,277 +79,299 @@
     </style>
 </head>
 <body>
+
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm1" runat="server"></asp:ScriptManager>
+
         <br />
         <h2 class="center">Sudoku</h2>
-
-        <div class="game-table">
-            <table class="game-table">
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox0" runat="server" ></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox16" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox17" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox18" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox19" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox20" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox22" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox24" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox26" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox27" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox28" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox29" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox30" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox31" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox32" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox33" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox34" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox35" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox36" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox37" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox38" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox39" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox40" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox41" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox42" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox43" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox44" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox45" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox46" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox47" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox48" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox49" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox50" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox51" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox52" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox53" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox54" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox55" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox56" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox57" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox58" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox59" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox60" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox61" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox62" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox63" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox64" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox65" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox66" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox67" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox68" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox69" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox70" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox71" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:TextBox ID="TextBox72" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox73" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox74" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox75" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox76" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox77" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox78" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox79" runat="server"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="TextBox80" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-            </table>
-
+        <div class="center">
+            <asp:Button ID="btnEasy" runat="server" Text="Easy" Width="75px" OnClick="SelectDifficulty" />
+            <asp:Button ID="btnMedium" runat="server" Text="Medium" Width="75px" OnClick="SelectDifficulty" />
+            <asp:Button ID="btnHard" runat="server" Text="Hard" Width="75px" OnClick="SelectDifficulty" />
+            <asp:Button ID="btnExtreme" runat="server" Text="Extreme" Width="75px" OnClick="SelectDifficulty" />
         </div>
-            <asp:Label ID="lblGameNumbers" runat="server"></asp:Label>
+
+        <asp:UpdatePanel ID="pnlGameTable" runat="server">
+            <ContentTemplate>
+                <div id="dGameTable" runat="server" class="game-table">
+                    <table class="game-table">
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="test1" runat="server" Visible="false"></asp:TextBox>
+                                <asp:TextBox ID="c00" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c01" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c02" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c03" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c04" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c05" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c06" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c07" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c08" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c10" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c11" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c12" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c13" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c14" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c15" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c16" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c17" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c18" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c20" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c21" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c22" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c23" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c24" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c25" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c26" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c27" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c28" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c30" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c31" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c32" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c33" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c34" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c35" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c36" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c37" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c38" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c40" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c41" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c42" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c43" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c44" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c45" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c46" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c47" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c48" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c50" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c51" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c52" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c53" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c54" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c55" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c56" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c57" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c58" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c60" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c61" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c62" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c63" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c64" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c65" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c66" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c67" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c68" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c70" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c71" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c72" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c73" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c74" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c75" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c76" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c77" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c78" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="c80" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c81" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c82" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c83" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c84" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c85" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c86" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c87" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:TextBox ID="c88" runat="server" MaxLength="1" AutoPostBack="true" OnTextChanged="Verify" Autocomplete="off"></asp:TextBox>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <br />
+        <div class="center">
+            <h3>Wishlist</h3>
+            <ul class="table-center" style="width: 30%">
+                <li>Keyboard navigation
+                </li>
+                <li>Rebuild in javascript
+                </li>
+            </ul>
+        </div>
 
     </form>
 </body>
